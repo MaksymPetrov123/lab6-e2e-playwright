@@ -1,0 +1,17 @@
+{
+  "name": "lab6-e2e-playwright",
+  "version": "1.0.0",
+  "description": "Лабораторна робота №6 — E2E та screenshot тести Playwright",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "start": "http-server public -p 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "http-server": "^14.1.1"
+  }
+}
