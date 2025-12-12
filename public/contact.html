@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #thankYou { display: none; color: green; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Зв'язок з нами</h1>
+  <form id="contactForm">
+    <input id="name" type="text" placeholder="Ваше ім'я" required>
+    <input id="email" type="email" placeholder="Email" required>
+    <textarea id="message" placeholder="Повідомлення" required></textarea>
+    <button type="submit">Відправити</button>
+  </form>
+  <p id="thankYou">Дякуємо за ваше повідомлення!</p>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      document.getElementById('thankYou').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

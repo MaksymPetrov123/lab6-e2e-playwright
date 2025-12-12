@@ -10,7 +10,8 @@ export default defineConfig({
   },
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
-    { name: 'firefox', use: { ...devices['Desktop Firefox'] } }
+    { name: 'firefox', use: { ...devices['Desktop Firefox'] } },
+    { name: 'iPhone13', use: { ...devices['iPhone 13'] } }  // мобільний проект
   ],
   webServer: {
     command: 'npm run start',
