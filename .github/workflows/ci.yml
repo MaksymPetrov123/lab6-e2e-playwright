@@ -25,5 +25,8 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
 
+      - name: Generate snapshots for Linux
+        run: npx playwright test --update-snapshots
+
       - name: Run tests
         run: npm test
